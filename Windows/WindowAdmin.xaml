@@ -1,0 +1,67 @@
+﻿<Window x:Class="DiningRoomApp.WindowAdmin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DiningRoomApp"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Icon="Pictures/2082066.png"
+        Title="Окно администратора" 
+        Height="550" 
+        Width="800">
+    <Grid>
+        
+        <Grid>
+            <Viewbox>
+                
+            </Viewbox>
+            <local:UserControlMenu Header="Админ"></local:UserControlMenu>
+            <StackPanel Margin="0,45,0,0">
+                <Button Name="Breakfast" 
+                        Content="Завтрак" 
+                        Background="Gold" 
+                        Width="150" 
+                        Height="30" 
+                        Margin="0,0,0,0" 
+                        FontSize="12" 
+                        HorizontalAlignment="Left" 
+                        VerticalAlignment="Top" 
+                        Click="Button_Click_Breakfast"></Button>
+                <Button Name="Lunch" 
+                        Content="Обед" 
+                        Background="Gold" 
+                        Width="150" 
+                        Height="30" 
+                        Margin="0,0,0,0" 
+                        FontSize="12" 
+                        HorizontalAlignment="Left" 
+                        VerticalAlignment="Top" 
+                        Click="Button_Click_Lunch"></Button>
+                <Button Name="Dinner" 
+                        Content="Ужин" 
+                        Background="Gold" 
+                        Width="150" 
+                        Height="30" 
+                        Margin="0,0,0,0" 
+                        FontSize="12" 
+                        HorizontalAlignment="Left" 
+                        VerticalAlignment="Top" 
+                        Click="Button_Click_Dinner"></Button>
+            </StackPanel>
+            <Frame NavigationUIVisibility="Hidden"
+                   Name="MainFrame" 
+                   Margin="150,45,0,0"/>
+            <Button Content="Выйти" 
+                    Name="BtnBack" 
+                    HorizontalAlignment="Right"  
+                    VerticalAlignment="Top" 
+                    FontSize="12" 
+                    Grid.Column="1" 
+                    Margin="0,8,5,0" 
+                    Width="175" 
+                    Height="30" 
+                    Click="BtnBack_Click"></Button>
+        </Grid>
+    </Grid>
+</Window>
